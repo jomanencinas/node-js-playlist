@@ -1,0 +1,27 @@
+{
+  "name": "node-js-playlist",
+  "version": "1.0.0",
+  "description": "a little app",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomanencinas/node-js-playlist.git"
+  },
+  "keywords": [
+    "fun",
+    "ninjas"
+  ],
+  "author": "Joman Encinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jomanencinas/node-js-playlist/issues"
+  },
+  "homepage": "https://github.com/jomanencinas/node-js-playlist#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
