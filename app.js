@@ -1,16 +1,13 @@
-//Global Objects
+var express = require('express');
+var todoController = require('./controllers/todoController');
+var app = express();
+app.set('view engine', 'ejs');
+//middleware
+app.use(express.static('./public'));
 
-// setTimeout(function(){
-//   console.log('3 seconds have passed');
-// }, 3000)
+//fire controllers
+todoController(app);
 
-// var time = 0;
-// setInterval(function(){
-//   time+=2;
-//   console.log(time + ' seconds have passed');
-// }, 2000)
-
-console.log(__dirname);
-console.log(__filename);
-console.log(__dirname);
-console.log('hello');
+//listen to ports
+app.listen(3000);
+console.log('You are listening to port 3000');
